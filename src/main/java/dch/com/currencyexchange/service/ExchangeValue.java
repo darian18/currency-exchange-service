@@ -14,7 +14,6 @@ public class ExchangeValue {
     @Column(name = "currency_to")
     private String to;
     private BigDecimal conversionMultiple;
-    private int port;
 
     public ExchangeValue() {
     }
@@ -40,13 +39,5 @@ public class ExchangeValue {
 
     public BigDecimal getConversionMultiple() {
         return conversionMultiple;
-    }
-
-    public int getPort() {
-        return port;
-    }
-
-    public void setPort(int port) {
-        this.port = port;
     }
 }
